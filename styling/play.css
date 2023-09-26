@@ -1,0 +1,134 @@
+body {
+    font-size: 22px;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+.contentWrapper {
+    margin-top: 20px;
+    left: 25vw;
+    right: 25vw;
+    position: relative;
+    align-items: center;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: auto 1fr auto;
+    max-width: 1000px;
+    min-height: 100vh;
+    transition: padding-top .125s;
+    width: 100%;
+    z-index: 999;
+}
+
+#wordsInput {
+    position: absolute;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    outline: none;
+    width: 55%;
+    font-size: 22px;
+    margin-left: 20vw;
+}
+
+#wordsWrapper {
+    margin-top: 10%;
+    margin-left: 20vw;
+}
+
+.typingConfig {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #191919;
+    display: flex;
+    border-radius: 10px;
+    color: gray;
+    font-size: 1rem;
+    gap: 0.5rem;
+    grid-auto-flow: column;
+    height: -moz-max-content;
+    height: max-content;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    transition: opacity .125s;
+    width: 100%;
+}
+
+i {
+    margin-right: 4px;
+    margin-top: 2px;
+}
+
+.textButton {
+    margin-right: 16px;
+}
+
+.textButton:hover {
+    color: white;
+    cursor: pointer;
+    animation: fadeIn .5s;
+}
+
+.textButton.active {
+    color: white;
+}
+
+div {
+    display: flex;
+    margin-right: 10px;
+}
+
+letter {
+    color: gray;
+}
+
+#carret {
+    width: 2px;
+    background-color: cornflowerblue;
+    position: absolute;
+    height: 1.1em;
+    animation: caretAnimation 1s infinite;
+    transition: all 0.1s;
+}
+
+.correct {
+    color: white;
+}
+
+.incorrect {
+    color: red;
+}
+
+@keyframes caretAnimation {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 1;
+    }
+
+    0% {
+        opacity: .5;
+    }
+}
