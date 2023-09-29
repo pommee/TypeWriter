@@ -5,12 +5,12 @@
     <script src="https://cdn.plot.ly/plotly-2.26.0.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="./styling/styles.css">
     <link rel="stylesheet" href="./styling/play.css">
-    <script src="./script/play.js"></script>
+    <script type="module" src="./resources/100-most-common-english-words.js"></script>
+    <script type="module" src="./script/play.js"></script>
 </head>
 
 <body>
     <div class="contentWrapper">
-
         <div class="typingConfig">
             <div class="typeConfig">
                 <div class="textButton active" mode="time">
@@ -34,7 +34,24 @@
                 <div id="words"></div>
             </div>
         </div>
-        <div id="wpmChart"></div>
+        <div class="result">
+            <div class="stats">
+                <div class="text">wpm</div>
+                <div class="netWPM">123</div>
+            </div>
+            <div id="wpmChart"></div>
+            <div class="moreStats">
+                <div class="group raw">
+                    <div class="text">raw</div>
+                    <div class="grossWPM">105</div>
+                </div>
+                <div class="group key">
+                    <div class="top">characters</div>
+                    <div class="cim" aria-label="correct, incorrect, and missed"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 

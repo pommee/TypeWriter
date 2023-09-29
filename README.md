@@ -5,3 +5,5 @@ While not having much experience with frontend development, I saw this as a good
 
 The aim is not to make a copy, but to get inspiration and make my own version.  
 Furthermore, multiplayer seems like great fun; so a "1v1" will also be the aim.
+
+A live version can be <a href="https://pommee.github.io/TypeWriter/" target="_blank">found here</a>
